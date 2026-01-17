@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+// Utilities for Colors
+@each $group, $shades in $colors-map {
+    @each $shade, $value in $shades {
+
+        // e.g. .bg-gray-500, .bg-primary-100
+        .bg-#{$group}-#{$shade} {
+            background-color: $value;
+        }
+
+        // e.g. .text-error-500
+        .text-#{$group}-#{$shade} {
+            color: $value;
+        }
+    }
+}
+
+// Utilities for Shadows
+@each $scale, $value in $shadows-map {
+    .shadow-#{$scale} {
+        box-shadow: $value;
+    }
+}
+
+// Utilities for Inner Shadows
+@each $scale, $value in $inner-shadows-map {
+    .shadow-inner-#{$scale} {
+        box-shadow: $value;
+    }
+}
+
+// Utilities for Blurs
+@each $name, $value in $blurs-map {
+    .blur-#{$name} {
+        backdrop-filter: $value;
+    }
+}
+
+// Utilities for Radius
+@each $scale, $value in $radius-map {
+    .rounded-#{$scale} {
+        border-radius: $value;
+    }
+}

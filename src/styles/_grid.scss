@@ -1,0 +1,74 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $space-400; // default padding
+    padding-left: $space-400;
+
+    @include mq('sm') {
+        max-width: 640px;
+    }
+
+    @include mq('md') {
+        max-width: 768px;
+    }
+
+    @include mq('lg') {
+        max-width: 1024px;
+    }
+
+    @include mq('xl') {
+        max-width: 1280px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    gap: $grid-gutter;
+}
+
+// Default Column Spans (Mobile First)
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        grid-column: span $i;
+    }
+}
+
+// Responsive Column Spans
+@each $bp-name, $bp-value in $breakpoints {
+    @include mq($bp-name) {
+        @for $i from 1 through $grid-columns {
+
+            // e.g. .md:col-6, .lg:col-4
+            // Note: We escape colon for CSS class name
+            .#{$bp-name}\:col-#{$i} {
+                grid-column: span $i;
+            }
+        }
+    }
+}
+
+// Common Flex Utilities (Optional helper)
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-4 {
+    gap: $space-400;
+}

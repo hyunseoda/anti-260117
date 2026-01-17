@@ -1,0 +1,73 @@
+@use 'variables' as *;
+
+@mixin typography($size, $weight: $font-weight-regular, $line-height: $line-height-base, $color: $color-text-primary, $font-family: $font-family-base) {
+    font-family: $font-family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}
+
+// Media Query Mixin
+@mixin mq($breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @if $value {
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+
+    @else {
+        @error "Breakpoint #{$breakpoint} not found in $breakpoints map";
+    }
+}
+
+// Previous Mixins
+@mixin text-hero {
+    @include typography($font-size-5xl, $font-weight-bold, $line-height-tight);
+}
+
+@mixin text-title {
+    @include typography($font-size-3xl, $font-weight-bold, $line-height-tight);
+}
+
+@mixin text-subtitle {
+    @include typography($font-size-xl, $font-weight-medium, $line-height-base, $color-text-secondary);
+}
+
+@mixin text-heading {
+    @include typography($font-size-2xl, $font-weight-bold, $line-height-tight);
+}
+
+@mixin text-subheading {
+    @include typography($font-size-lg, $font-weight-medium, $line-height-base);
+}
+
+@mixin text-body {
+    @include typography($font-size-base, $font-weight-regular, $line-height-base);
+}
+
+// NEW VARIANTS
+@mixin text-body-small {
+    @include typography($font-size-sm, $font-weight-regular, $line-height-base);
+}
+
+@mixin text-body-small-strong {
+    @include typography($font-size-sm, $font-weight-bold, $line-height-base);
+}
+
+@mixin text-caption {
+    @include typography($font-size-xs, $font-weight-regular, $line-height-base, $color-text-secondary);
+}
+
+@mixin text-input {
+    @include typography($font-size-base, $font-weight-regular, $line-height-base);
+}
+
+@mixin text-code {
+    @include typography($font-size-sm, $font-weight-regular, 1.4, $color-text-primary, $font-family-mono);
+    background-color: $color-gray-100;
+    padding: 0.2em 0.4em;
+    border-radius: $radius-sm;
+}

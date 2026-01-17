@@ -1,0 +1,262 @@
+// Colors
+// Grayscale
+$color-white: #ffffff;
+$color-gray-50: #f9fafb;
+$color-gray-100: #f3f4f6;
+$color-gray-200: #e5e7eb;
+$color-gray-300: #d1d5db;
+$color-gray-400: #9ca3af;
+$color-gray-500: #6b7280;
+$color-gray-600: #4b5563;
+$color-gray-700: #374151;
+$color-gray-800: #1f2937;
+$color-gray-900: #111827;
+$color-black: #000000;
+
+// Primary (Green/Emerald)
+$color-primary-50: #ecfdf5;
+$color-primary-100: #d1fae5;
+$color-primary-200: #a7f3d0;
+$color-primary-300: #6ee7b7;
+$color-primary-400: #34d399;
+$color-primary-500: #10b981;
+$color-primary-600: #059669;
+$color-primary-700: #047857;
+$color-primary-800: #065f46;
+$color-primary-900: #064e3b;
+
+// Semantic - Error (Red)
+$color-error-50: #fef2f2;
+$color-error-100: #fee2e2;
+$color-error-200: #fecaca;
+$color-error-300: #fca5a5;
+$color-error-400: #f87171;
+$color-error-500: #ef4444;
+$color-error-600: #dc2626;
+$color-error-700: #b91c1c;
+
+// Semantic - Warning (Amber/Orange)
+$color-warning-50: #fffbeb;
+$color-warning-100: #fef3c7;
+$color-warning-200: #fde68a;
+$color-warning-300: #fcd34d;
+$color-warning-400: #fbbf24;
+$color-warning-500: #f59e0b;
+$color-warning-600: #d97706;
+$color-warning-700: #b45309;
+
+// Semantic - Info (Blue)
+$color-info-50: #eff6ff;
+$color-info-100: #dbeafe;
+$color-info-200: #bfdbfe;
+$color-info-300: #93c5fd;
+$color-info-400: #60a5fa;
+$color-info-500: #3b82f6;
+$color-info-600: #2563eb;
+$color-info-700: #1d4ed8;
+
+// Semantic Aliases
+$color-success: $color-primary-500;
+$color-warning: $color-warning-500;
+$color-error: $color-error-500;
+$color-info: $color-info-500;
+
+// Semantic Assignments
+$color-text-primary: $color-gray-900;
+$color-text-secondary: $color-gray-500;
+$color-text-tertiary: $color-gray-400;
+
+$color-background: $color-white;
+$color-background-alt: $color-gray-50;
+
+$color-border: $color-gray-200;
+
+// Font Families
+$font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+$font-family-serif: 'Merriweather', serif;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Line Heights
+$line-height-tight: 1.2;
+$line-height-base: 1.5;
+$line-height-loose: 1.8;
+
+// Font Sizes (Scale)
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2rem;
+$font-size-4xl: 2.5rem;
+$font-size-5xl: 3rem;
+
+// Spacing
+$space-100: 0.25rem;
+$space-200: 0.5rem;
+$space-300: 0.75rem;
+$space-400: 1rem;
+$space-500: 1.5rem;
+$space-600: 2rem;
+$space-800: 3rem;
+$space-1000: 4rem;
+$space-1200: 6rem;
+
+$space-gap-sm: $space-200;
+$space-gap-md: $space-400;
+$space-gap-lg: $space-600;
+
+// Radius
+$radius-xs: 0.125rem;
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 1rem;
+$radius-xl: 1.5rem;
+$radius-full: 9999px;
+
+// Effects: Drop Shadows
+$shadow-100: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-200: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-300: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-400: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-500: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-600: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+// Effects: Inner Shadows
+$inner-shadow-100: inset 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$inner-shadow-200: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+$inner-shadow-300: inset 0 4px 6px 0 rgba(0, 0, 0, 0.06);
+$inner-shadow-400: inset 0 6px 8px 0 rgba(0, 0, 0, 0.08);
+$inner-shadow-500: inset 0 10px 12px 0 rgba(0, 0, 0, 0.1);
+$inner-shadow-600: inset 0 12px 16px 0 rgba(0, 0, 0, 0.12);
+
+// Effects: Blur
+$blur-overlay: blur(4px);
+$blur-blanket: blur(8px);
+$blur-layer: blur(12px);
+$blur-glass: blur(20px);
+
+// --- BREAKPOINTS & GRID ---
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+$breakpoints: (
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl
+);
+
+$grid-columns: 12;
+$grid-gutter: 1.5rem; // space-500
+
+// --- MAPS FOR UTILITIES ---
+
+$colors-map: (
+    'gray': (50: $color-gray-50,
+        100: $color-gray-100,
+        200: $color-gray-200,
+        300: $color-gray-300,
+        400: $color-gray-400,
+        500: $color-gray-500,
+        600: $color-gray-600,
+        700: $color-gray-700,
+        800: $color-gray-800,
+        900: $color-gray-900,
+    ),
+    'primary': (50: $color-primary-50,
+        100: $color-primary-100,
+        200: $color-primary-200,
+        300: $color-primary-300,
+        400: $color-primary-400,
+        500: $color-primary-500,
+        600: $color-primary-600,
+        700: $color-primary-700,
+        800: $color-primary-800,
+        900: $color-primary-900,
+    ),
+    'error': (50: $color-error-50,
+        100: $color-error-100,
+        200: $color-error-200,
+        300: $color-error-300,
+        400: $color-error-400,
+        500: $color-error-500,
+        600: $color-error-600,
+        700: $color-error-700,
+    ),
+    'warning': (50: $color-warning-50,
+        100: $color-warning-100,
+        200: $color-warning-200,
+        300: $color-warning-300,
+        400: $color-warning-400,
+        500: $color-warning-500,
+        600: $color-warning-600,
+        700: $color-warning-700,
+    ),
+    'info': (50: $color-info-50,
+        100: $color-info-100,
+        200: $color-info-200,
+        300: $color-info-300,
+        400: $color-info-400,
+        500: $color-info-500,
+        600: $color-info-600,
+        700: $color-info-700,
+    ),
+    'base': ('white': $color-white,
+        'black': $color-black )
+);
+
+$shadows-map: (
+    100: $shadow-100,
+    200: $shadow-200,
+    300: $shadow-300,
+    400: $shadow-400,
+    500: $shadow-500,
+    600: $shadow-600,
+);
+
+$inner-shadows-map: (
+    100: $inner-shadow-100,
+    200: $inner-shadow-200,
+    300: $inner-shadow-300,
+    400: $inner-shadow-400,
+    500: $inner-shadow-500,
+    600: $inner-shadow-600,
+);
+
+$blurs-map: (
+    'overlay': $blur-overlay,
+    'blanket': $blur-blanket,
+    'layer': $blur-layer,
+    'glass': $blur-glass,
+);
+
+$radius-map: (
+    'xs': $radius-xs,
+    'sm': $radius-sm,
+    'md': $radius-md,
+    'lg': $radius-lg,
+    'xl': $radius-xl,
+    'full': $radius-full,
+);
+
+$spacing-map: (
+    100: $space-100,
+    200: $space-200,
+    300: $space-300,
+    400: $space-400,
+    500: $space-500,
+    600: $space-600,
+    800: $space-800,
+    1000: $space-1000,
+    1200: $space-1200,
+);

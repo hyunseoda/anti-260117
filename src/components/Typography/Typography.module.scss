@@ -1,0 +1,81 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.typography {
+    margin: 0;
+
+    // Variants
+    &.variant-hero {
+        @include text-hero;
+    }
+
+    &.variant-title {
+        @include text-title;
+    }
+
+    &.variant-subtitle {
+        @include text-subtitle;
+    }
+
+    &.variant-heading {
+        @include text-heading;
+    }
+
+    &.variant-subheading {
+        @include text-subheading;
+    }
+
+    &.variant-body {
+        @include text-body;
+    }
+
+    &.variant-body-small {
+        @include text-body-small;
+    }
+
+    &.variant-body-small-strong {
+        @include text-body-small-strong;
+    }
+
+    &.variant-caption {
+        @include text-caption;
+    }
+
+    &.variant-input {
+        @include text-input;
+    }
+
+    &.variant-code {
+        @include text-code;
+    }
+
+    // Overrides if props provided
+    &.weight-regular {
+        font-weight: $font-weight-regular;
+    }
+
+    &.weight-medium {
+        font-weight: $font-weight-medium;
+    }
+
+    &.weight-bold {
+        font-weight: $font-weight-bold;
+    }
+
+    // Color Overrides (Utility-like)
+    &.color-secondary {
+        color: $color-text-secondary;
+    }
+
+    &.color-tertiary {
+        color: $color-text-tertiary;
+    }
+
+    &.color-error {
+        color: $color-error-500;
+    }
+
+    &.color-success {
+        color: $color-success;
+    }
+}
